@@ -1,0 +1,68 @@
+html {
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100vw;
+    /* height: 10vh; */
+    border: 1px solid black;
+    padding: 1%;
+    margin: 0px;
+    display: inline-flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbarcontent_ul {
+    width: 50%;
+    display: inline-flex;
+
+}
+
+.navbarcontent_ul li {
+    margin: 1rem;
+
+}
+
+
+
+.navbarcontent_ul li :hover {
+    color: red !important;
+}
+
+.navbar_buttons {
+    margin: 1.5rem;
+}
+
+.searchButton {
+    border-radius: 50%;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.purchaseButton {
+    background-color: rgb(12, 12, 62);
+    padding: 0.4rem;
+    border-radius: 12px;
+    color: white;
+}
+
+.purchaseButton:hover {
+    color: rgb(12, 12, 62);
+    padding: 0.4rem;
+    border-radius: 12px;
+    background-color: white;
+}
