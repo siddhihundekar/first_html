@@ -1,0 +1,30 @@
+.parentdiv{
+    background-color: goldenrod;
+    padding: 12%;
+}
+
+.banner{
+    margin-top: 20em;
+    width: 36.3vw;
+    height: 70vh;
+    padding: 0px;
+    margin: 0 auto;
+    font-size: 80%;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+}
+
+.image{
+    width: 100%;
+}
+
+.userprofile{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    position: absolute;
+    top: 14em;
+    left: 15em;
+}
