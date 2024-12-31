@@ -1,0 +1,363 @@
+html,
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbarcontent .fa{
+    font-size: 1.5em;
+}
+
+.tutee{
+    margin-top: 0.4em;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.navbarcontent{
+    margin-right: 0px;
+}
+
+a{
+    text-decoration: none;
+    margin: 2em;
+    color: black;
+}
+
+a:hover{
+    color: #05dfd7;
+}
+
+.contact{
+    margin: 2em;
+    padding: 1em;
+    width: 10em;
+    height: 4em;
+    font-weight: bolder;
+    background-color: #fA26A0;
+    color:white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact:hover{
+    background-color:  #05dfd7;
+    color:white;
+}
+
+.background_img{
+    height: 100vh;
+    width: 100w;
+    background-image: url(https://p.w3layouts.com/demos_new/template_demo/06-09-2020/tutee-liberty-demo_Free/448738053/web/assets/images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.background_img_overlay{
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.page1{
+    padding: 9em;
+    font-family: sans-serif;
+}
+
+.present_education{
+    color: #FFFFFF;
+    font-size: 4em;
+}
+
+.background_img .paragraph{
+    color: #DDDDDD;
+    font-size:1em;
+}
+    
+.email{
+    border: none;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    color: black;
+    height: 3em;
+    width: 22em;
+}   
+
+.subscribe{
+    border: none;
+    border-radius: 6px;
+    background-color: #fA26A0;
+    color: white;
+    height: 3em;
+    width: 9em;
+    margin-left: 1em;
+}
+
+.subscribe:hover{
+    background-color: #05dfd7;
+    cursor: pointer;
+}
+
+.you{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.learn{
+    font-size: 2.5em;
+    color: #222222;
+}
+
+.paragraph{
+    color: #777777;
+}
+
+.unlimited{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2em;
+    text-align: center;
+    padding: 5%;
+}
+
+.unlimited .h3:hover{
+    color: #05dfd7;
+    cursor: pointer;
+}
+
+.unlimited .fa{
+    font-size: 2em;
+    color: #fA26A0;
+}
+
+.successful{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #f7f7f7;
+    color: white;
+    /* padding-left: 4em;
+    padding-right: 4em; */
+    padding: 6em;
+    gap: 2em;
+    height: 90vh;
+}
+
+.successful .trained{
+    background-image: url(https://p.w3layouts.com/demos_new/template_demo/06-09-2020/tutee-liberty-demo_Free/448738053/web/assets/images/b8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+}
+
+.successful .received{
+    background-image: url(https://p.w3layouts.com/demos_new/template_demo/06-09-2020/tutee-liberty-demo_Free/448738053/web/assets/images/b7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+}
+
+.successful .featured{
+    background-image: url(https://p.w3layouts.com/demos_new/template_demo/06-09-2020/tutee-liberty-demo_Free/448738053/web/assets/images/b6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+}
+
+.successful .established{
+    background-image: url(https://p.w3layouts.com/demos_new/template_demo/06-09-2020/tutee-liberty-demo_Free/448738053/web/assets/images/b2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+}
+
+.successful .h2{
+    font-weight:900;
+}
+.successful .h2:hover{
+    color: #05dfd7;
+    cursor: pointer;
+}
+
+.successful .paragraph{
+    border-right: 4px solid white;
+    padding-right: 2em;
+    margin-top: 9em;
+    text-align: end;
+    color: #DDDDDD;
+}
+
+.courses{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.top{
+    font-size: 2.5em;
+    color: #222222;
+}
+
+.views{
+    color: #222222;
+    padding: 6em;
+    display: flex;
+}
+
+.views .branding{
+    height: 8vh;
+    width: 3vw;
+    border: 2px solid black;
+}
+
+ .image{
+    width: 75%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.views .h3{
+    color: #444444;
+    align-items: center;
+}
+.views .h3:hover{
+    color: #05dfd7;
+    cursor: pointer;
+}
+
+.work{
+    padding: 6em;
+    align-items: center;
+    background-color: #F7F7F7;
+    display: flex;
+    gap: 3em;
+}
+
+.work .img{
+    border-radius: 10px;
+    height: 46vh;
+    width: 35vw;
+}
+
+.how{
+    height: 46vh;
+    width: 35vw;
+}
+
+.how .h6{
+    color: #999999;
+}
+
+.how .h1{
+    color: #222222;
+    font-size: 2.5em;
+}
+
+.read{
+    border: none;
+    border-radius: 6px;
+    background-color: #fA26A0;
+    color: white;
+    height: 4em;
+    width: 11em;
+    margin-left: 1em;
+    padding: 1.5em;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 1px;
+}
+
+.read:hover{
+    background-color: #05dfd7;
+    cursor: pointer;
+}
+
+.girl{
+    border-radius: 50%;
+}
+
+.limit{
+    margin: 0px auto;
+    padding: 5em;
+    text-align: center;
+    height: 50vh;
+    width: 35vw;
+}
+
+.footer{
+    background-color: #212529;
+    color: #FFFFFF;
+    padding: 3em;
+}
+
+.about{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about_us{
+    width: 20vw;
+}
+.about_us .fa{
+    /* font-size: 1.5em; */
+    height: 1.4em;
+    width: 1.4em;
+    text-align: center center;
+    padding: 0.3em;
+    border-radius: 3px;
+}
+.about_us .fa-facebook{
+    background-color: #3B5998;
+}
+.about_us .fa-twitter{
+    background-color: #1DA1F2;
+}
+.about_us .fa-instagram{
+    background-color: #C13584;
+}
+.about_us .fa-google-plus{
+    background-color: #DD4B39;
+}
+.about_us .fa-linkedin{
+    background-color: #0077B5;
+}
+
+.about_us .fa:hover{
+    background-color: #212529;
+}
+
+.para{
+    color: #AAAAAA;
+}
+
+.admin{
+    color: #AAAAAA;
+}
+
+.admin:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.contact_us{
+    width: 19vw;
+}
+
+.hr{
+    width: 70em;
+    color: #454545;
+}
+
+.end{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 6em;
+    padding: 1em;
+    width: 70em;
+}
