@@ -1,0 +1,505 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+}
+*{
+    font-family: sans-serif ;
+}
+
+.navbar{
+    display: flex;
+    margin: 1em;
+    border-bottom: 1px solid black;
+}
+
+.logotext{
+    display: flex;
+    /* font-size: 14px; */
+    margin: 1.5em 1em 0 2em;
+    color: black;
+}
+
+.logotext:hover{
+    color: #0176D3;
+}
+
+.logo{
+    margin-right: 9px;
+    margin-bottom: 1em;
+    width: 2.5em;
+}
+
+.navbarcontent{
+    list-style-type: none;
+}
+
+.navbarcontent ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbarcontent ul li{
+    margin: 2em;
+}
+.navbarcontent ul li a{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+a:hover{
+    color: #0176D3;
+}
+
+.discover{
+    position: relative;
+}
+.discover .discoverdropdown{
+    width: 70rem;
+    height: 20rem;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 5em;
+    left: -34rem;
+    display: none;
+    padding: 1em 2em 1em 2em;
+}
+
+.discover .developer{
+    padding:  0 4em 0 1em;
+    border-right: 1px solid grey;
+}
+
+.discover .salesforce{
+    padding:  0 4em 0 2em;
+    border-right: 1px solid grey;
+    display: flex;
+}
+.discover .salesforce .mobile{
+    padding:  2.7em 0 0 3em;
+}
+
+.discover .industries{
+    padding:  0 0 0 2em;
+}
+
+.discoverdropdown .display a{
+    color: #032D60;
+    margin:1em 0 1em 0;
+}
+.discoverdropdown .display a:hover{
+    color:#0176D3;
+}
+
+.discover:hover .discoverdropdown{
+    display: block;
+}
+
+.discoverdropdown .display{
+    display: flex;
+}
+.display h4{
+    color: #444444;
+    font-weight: lighter;
+}
+
+.build{
+    position: relative;
+}
+.build .builddropdown{
+    width: 75rem;
+    height: 28rem;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 5em;
+    left: -45rem;
+    display: none;
+    padding: 1em 2em 1em 2em;
+}
+.builddropdown .display{
+    display: flex;
+}
+.build:hover .builddropdown{
+    display: block;
+}
+
+.builddropdown .display .resources{
+    margin: 1em;
+}
+.builddropdown .display .developer_tools{
+    margin: 1em;
+} 
+.builddropdown .display .build_skills{
+    margin: 1em;
+}
+.builddropdown .display .extend_salesforce{
+    width: 20em;
+    margin: 1em;
+}
+
+.connect{
+    position: relative;
+}
+.connect .connectdropdown{
+    width: 40rem;
+    height: 30rem;
+    background-color:#fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 5em;
+    left: -30rem;
+    display: none;
+    padding: 1em 2em 1em 2em;
+}
+.connectdropdown .display{
+    display: flex;
+}
+.connect:hover .connectdropdown{
+    display: block;
+}
+
+.connect .connectdropdown .date{
+    width: 16em;
+    margin: 0 4em 1em 2em;
+    padding-right: 3em;
+    border-right: 1px solid #a0bdd4;
+}
+.connect .connectdropdown .community{
+    width: 16em;
+}
+
+.button{
+    height: 3em;
+    width: 11em;
+    background-color: #0176D3;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: 3em 0 2em 14em;
+}
+
+.button:hover{
+    background-color: #023248;
+}
+
+.display{
+    display: flex;
+}
+
+.guide{
+    margin: 0 1em;
+    border-right: 1px solid #a6acac;
+}
+
+.search{
+    color: #032D60;
+    width: 19em;
+    font-size: 1.1em;
+}
+
+.search_button{
+    height: 2.2em;
+    width: 16em;
+    background-color: white;
+    text-align: start;
+    display: inline-flex;
+    border: 1px solid grey;
+}
+.search_button input{
+    width: 100%;
+}
+.search_button input:focus{
+   outline: none;
+}
+.search_button:hover{
+    border: 2px solid #0176D3;
+}
+
+.icon{
+    margin: 0.5em;
+}
+
+.search{
+    border: none;
+    background-color: transparent;
+}
+
+.API{
+    margin: 1em 0 0 0;
+    font-weight: bold;
+    width: 17em;
+    height: 2em;
+    border: none;
+    color: #0176D3;
+    background-color: white;
+    align-content: center;
+}
+
+.API option:hover{
+    background-color: rgb(215, 215, 225);
+    cursor: pointer;
+}
+
+.guide .index .content{
+    margin-left: -1em;
+    font-weight: bold;
+    color: #032D60;
+    background-color: #e1f1f1;
+    border-left: 3px solid #032D60;
+    padding: 1%;
+}
+.guide .index .content:hover{
+    color: #0176D3;
+    cursor: pointer;
+}
+
+/* .index .displaycontent{
+    display: none;
+}
+.index:hover .displaycontent{
+    display: block;
+} */
+
+.displaycontent .other_resources{
+    display: none;
+}
+.displaycontent:hover .other_resources{
+    display: block;
+}
+
+.index .displaycontent a{
+    color: #032D60;
+    margin-left: 1em;
+}
+.index .displaycontent a:hover{
+    color: #0176D3;
+    cursor: pointer;
+}
+
+.index .displaycontent p{
+    color: #032D60;
+    margin-left: 1em;
+}
+.index .displaycontent p:hover{
+    color: #0176D3;
+    cursor: pointer;
+}
+
+.index .displaycontent .para{
+    margin:2em;
+}
+
+.maindiv{
+    padding: 2em 8em 3em 7em;
+    /* margin-left: 7em;
+    width: 55em;
+    border-left-color: black; */
+}
+
+.maindiv .h1{
+    font-size: 3em;
+    color: #032D60;
+}
+
+.maindiv .para{
+    color: #181818;
+}
+.maindiv .para sup .fa{
+    font-size: 0.6em;
+}
+
+.note{
+    border-left: 5px solid #0176D3;
+    border-radius: 4px;
+    background-color: #e1f1f1;
+    padding: 0.5em;
+}
+/* .note .h5{
+    margin-left: 1em;
+} */
+.note .fa{
+    color: #0176D3;
+    font-size: 1.5em;
+    margin: 0 0.2em 0 0.5em;
+}
+.note p{
+    margin-left: 2em;
+}
+
+.note a{
+    color: #0176D3;
+    font-weight: lighter;
+}
+
+.note a:hover{
+    text-decoration: underline;
+}
+
+.points ul{
+    text-decoration: black;
+}
+
+.points ul li a{
+    color: #0176D3;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: black;
+}
+.points ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.issue{
+    display: flex;
+    margin: 3em;
+    padding: 1em;
+    border: 1px solid;
+    border-color: grey white grey white
+}
+
+.feedback{
+    margin: 3em 0 1em 33rem;
+    height: 2em;
+    width: 12em;
+    background-color: white;
+    color: #0176D3;
+    font-weight: bold;
+    border-color: #0176D3;
+    border-radius: 4px;
+}
+.feedback:hover{
+    background-color: #e1f1f1;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15em 0 0 0;
+    background-color: #F1F3FB;
+}
+
+/* .salesforce .h3{
+    margin: 15em 0 0 0;
+    background-color: #F1F3FB;
+} */
+.footer .salesforce img{
+    height: 6rem;
+    width: 6rem;
+    margin: 3em 3em 1em 0;
+}
+.salesforce .icons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 1em;
+}
+
+.icons .fa{
+    font-size: 1.6em;
+    color:#F1F3FB;
+    background-color: #023248;
+    border: 1px solid #023248;
+    border-radius: 50%;
+    padding: 0.4em;
+}
+.icons .fa:hover{
+    color: #a0bdd4;
+}
+
+.footer a{
+    color:#0176D3;
+    font-weight: lighter;
+}
+.footer a:hover{
+    color: #023248;
+    cursor: pointer;
+}
+
+.footerbottom{
+    padding: 2em;
+    padding-left: 5em;
+    font-size: 11px;
+    background-color: #032D60;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+.footerbottom a{
+    color: #78B0FD;
+    font-weight: lighter;
+}
+.footerbottom a:hover{
+    color:#a0bdd4;
+}
+
+.footerbottom .end{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerbottom .end img{
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 5px;
+}
+
+
+
+
+@media(max-width:500px ) and ( min-width:450px){
+.navbar,.navbarcontent ul,.navbarcontent ul li a{
+    flex-direction: column;
+    width:100%;
+}
+
+.discover .salesforce{
+    flex-direction: column;
+}
+.discoverdropdown .display,.builddropdown .display,.connectdropdown .display{
+    flex-direction: column;
+    width: 100%;
+}
+
+.button{
+    align-items: center;
+}
+.feedback{
+    margin-left: 0;
+}
+
+.maindiv{
+    width: 90%;
+    margin-left: 2px;
+    padding: 1em;
+}
+.display,.issue{
+    flex-direction: column;
+    width: 100%;
+}
+.footer,.footerbottom .end{
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer .salesforce img{
+    margin-left: 9.5em;
+}
+
+.footer .developer h4,.footer .popular h4,.footer .community h4{
+    padding: 2em;
+}
+.footer .developer a,.footer .popular a,.footer .community a{
+    padding: 4em;
+}
+
+}
