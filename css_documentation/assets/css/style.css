@@ -499,7 +499,7 @@ a:hover{
     margin-left: 2px;
     padding: 1em;
 }
-.display,.issue{
+.d-flex,.issue{
     flex-direction: column;
     width: 100%;
 }
