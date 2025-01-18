@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        .stopwatch{
+            text-align: center;
+            color: rgb(196, 23, 52);
+            font-size: 3em;
+        }
+        #btnStart{
+            background-color: rgb(196, 23, 52);
+            color: white;
+            border: none;
+            height: 6vh;
+            width: 12vh;
+            padding: 0.5em;
+            border-radius: 5px;
+        }
+        #btnStop{
+            background-color: rgb(196, 23, 52);
+            color: white;
+            border: none;
+            height: 6vh;
+            width: 12vh;
+            padding: 0.5em;
+            border-radius: 5px;
+        }
+        #btnReset{
+            background-color: rgb(196, 23, 52);
+            color: white;
+            border: none;
+            height: 6vh;
+            width: 12vh;
+            padding: 0.5em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="stopwatch">
+        <div class="time">
+            <h1><span id="hh">00</span>::<span id="mm">00</span>::<span id="ss">00</span></h1>
+        </div>
+        <div class="buttons">
+            <button id="btnStart">Start</button>
+            <button id="btnStop">Stop</button>
+            <button id="btnReset">Reset</button>
+        </div>
+    </div>
+
+
+    <script>
+        let hh = document.querySelector("#hh");
+        let mm = document.querySelector("#mm");
+        let ss = document.querySelector("#ss");
+
+
+    let hrs=0, minutes =0, seconds =0;
+    setTimeout(() => {alert("This is after 1 seconds")}, 1000);
+
+    let stopwatch;
+
+    function startstopwatch() {
+        stopwatch = setInterval( () => { Start () }, 1000);
+    }
+    btnStart.addEventListener("click",() => {startstopwatch()})
+
+    function stopstopwatch() {
+        clearInterval(stopwatch);
+    }
+    btnStop.addEventListener("click",() => {stopstopwatch()})
+
+    function resetstopwatch(){
+        stopstopwatch()
+            hrs = 0;
+            minutes= 0;
+            seconds= 0;
+            hh.innerText = hrs;
+            mm.innerText = minutes;
+            ss.innerText = seconds;
+        }
+    btnReset.addEventListener("click",() => {resetstopwatch()})
+
+
+    function Start() {
+        seconds++;
+        if ( seconds == 60){
+            seconds = 0;
+            minutes ++;
+            if ( minutes == 60){
+            minutes = 0;
+            minutes ++;
+            hh.innerText=hrs;
+        }
+        mm.innerText = minutes;
+        }
+        ss.innerText = seconds;
+    }
+
+
+
+    </script>
+</body>
+</html>
