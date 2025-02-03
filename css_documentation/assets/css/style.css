@@ -10,7 +10,7 @@ body{
 
 .navbar{
     display: flex;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #d8d8d8;
 }
 
 .logotext{
@@ -24,9 +24,8 @@ body{
 }
 
 .logo{
-    margin-right: 9px;
-    margin-bottom: 1em;
-    width: 2.5em;
+    padding: 0em 0.5em 1.7em 0.5em;
+    width: 3em;
 }
 
 .navbarcontent{
@@ -56,9 +55,15 @@ a:hover{
     color: #0176D3;
 }
 
+.navbar .navbarcontent ul li .fa{
+    margin: -0.2em 0em 0em 0.4em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
 .discover{
     position: relative;
 }
+
 .discover .discoverdropdown{
     width: 70rem;
     height: 20rem;
@@ -70,15 +75,15 @@ a:hover{
     display: none;
     padding: 1em 2em 1em 2em;
 }
-.discover 
+
 .discover .developer{
     padding:  0 4em 0 1em;
-    border-right: 1px solid grey;
+    border-right: 1px solid #a0bdd4;
 }
 
 .discover .salesforce{
     padding:  0 4em 0 2em;
-    border-right: 1px solid grey;
+    border-right: 1px solid #a0bdd4;
     display: flex;
 }
 .discover .salesforce .mobile{
@@ -114,8 +119,8 @@ a:hover{
 }
 .build .builddropdown{
     width: 75rem;
-    height: 28rem;
-    background-color: #fff;
+    height: 30rem;
+    background-color: #ffffff;
     border-radius: 5px;
     position: absolute;
     top: 6em;
@@ -140,12 +145,18 @@ a:hover{
 
 .builddropdown .d-flex .resources{
     margin: 1em;
+    padding: 1em;
+    border-right: 1px solid #a0bdd4;
 }
 .builddropdown .d-flex .developer_tools{
     margin: 1em;
+    padding: 1em;
+    border-right: 1px solid #a0bdd4;
 } 
 .builddropdown .d-flex .build_skills{
     margin: 1em;
+    padding: 1em;
+    border-right: 1px solid #a0bdd4;
 }
 .builddropdown .d-flex .extend_salesforce{
     width: 20em;
@@ -197,7 +208,7 @@ a:hover{
     color: white;
     border: none;
     border-radius: 3px;
-    margin: 3em 0 2em 14em;
+    margin: 3em 0 2em 10em;
 }
 
 .button:hover{
@@ -209,28 +220,36 @@ a:hover{
 }
 
 .guide{
-    margin: 0 1em;
-    border-right: 1px solid #a6acac;
+    width: 20em;
+    padding: 1em;
+    border-right: 1px solid #d8d8d8;
     /* position: fixed; */
+}
+.guide .search h3{
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+    /* text-align: center; */
 }
 
 .search{
     color: #032D60;
-    width: 19em;
+    /* width: 19em; */
     font-size: 1.1em;
+    border: none;
+    background-color: transparent;
 }
 
 .searchbox{
     height: 2.2em;
-    width: 16em;
+    width: 20em;
     background-color: white;
     text-align: start;
     display: inline-flex;
     border: 1px solid grey;
 }
-.searchbox input{
+/* .searchbox input{
     width: 100%;
-}
+} */
 .searchbox input:focus{
    outline: none;
 }
@@ -242,33 +261,27 @@ a:hover{
     margin: 0.5em;
 }
 
-.search{
-    border: none;
-    background-color: transparent;
-}
-
 .API{
-    margin: 1em 0 0 0;
+    margin: 1em 0px 0px 0px;
     font-weight: bold;
-    width: 17em;
-    height: 2em;
-    border: none;
+    width: 100%;
+    padding: 0.9em;
+    /* border: 1px 0px 1px 0px solid ; */
+    border-color: #d8d8d8;
     color: #0176D3;
     background-color: white;
-    align-content: center;
+    align-content: center; 
 }
-
 .API option:hover{
     background-color: rgb(215, 215, 225);
     cursor: pointer;
 }
 
+
 .guide .index .content{
-    margin-left: -1em;
+    /* margin-left: -0.5em; */
     font-weight: bold;
     color: #032D60;
-    background-color: #e1f1f1;
-    border-left: 3px solid #032D60;
     padding: 1%;
 }
 .guide .index .content:hover{
@@ -276,58 +289,87 @@ a:hover{
     cursor: pointer;
 }
 
-/* .index .displaycontent{
+.guide .index .content .fa{
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    /* transition: 0.4s; */
+}
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #EEF4FF;
+}
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
     display: none;
-}
-.index:hover .displaycontent{
-    display: block;
-} */
-
-/* .index .displaycontent .a {
-    margin: 2em;
-    font-size: 2em;
-} */
-
-.displaycontent .other_resources{
-    display: none;
-}
-.displaycontent:hover .other_resources{
-    display: block;
+    overflow: hidden;
 }
 
-.index .displaycontent a{
+
+.accordion span{
+    color: #032D60;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.accordion span:hover{
+    color: #0176D3;
+    cursor: pointer;
+}
+
+.panel p{
+    color: #032D60;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.panel p:hover{
+    color: #0176D3;
+    cursor: pointer;
+}
+
+/* .index .displaycontent a{
     color: #032D60;
     margin-left: 1em;
 }
 .index .displaycontent a:hover{
     color: #0176D3;
     cursor: pointer;
-}
+} */
 
-.index .displaycontent p{
+/* .index .displaycontent p{
     color: #032D60;
     margin-left: 1em;
 }
 .index .displaycontent p:hover{
     color: #0176D3;
     cursor: pointer;
-}
-
-.index .displaycontent .para{
-    margin:2em;
-}
+} */
 
 .maindiv{
-    padding: 2em 8em 3em 7em;
+    padding: 2em 8em 3em 5em;
     /* margin-left: 20em; */
 }
 
 .maindiv .h1{
-    font-size: 3em;
+    font-size: 2.5em;
     color: #032D60;
 }
 
-.maindiv .para{
+.maindiv .p{
     color: #181818;
 }
 .maindiv .para sup .fa{
@@ -378,10 +420,10 @@ a:hover{
 
 .issue{
     display: flex;
-    /* margin-left: 26em; */
-    padding: 1em;
+    margin: 3em;
+    padding: 0.5em 0em 0.5em 0em;
     border: 1px solid;
-    border-color: grey white grey white
+    border-color: #d8d8d8 white #d8d8d8 white
 }
 
 .feedback{
@@ -439,9 +481,7 @@ a:hover{
     color: #a0bdd4;
 }
 
-.footer{
-    margin-left: -1em;
-}
+
 .footer a{
     color:#0176D3;
     font-weight: lighter;
@@ -459,7 +499,6 @@ a:hover{
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
-    margin-left: -1.5em;
 }
 .footerbottom a{
     color: #78B0FD;

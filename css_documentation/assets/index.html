@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <title>Documentation</title>
 </head>
 <body>
@@ -166,14 +167,14 @@
         </div>
         <div class="index">
             <a href=""><p class="content"><span class="fa fa-angle-down"> <strong> AJAX Toolkit Developer Guide</strong></span></p></a>
-            <div class="displaycontent">
+            <!-- <div class="displaycontent">
                 <a href=""><span class="fa fa-angle-right">  When to Use the AJAX Toolkit</span></a>
                 <div class="other_resources">
                     <p>AJAX Toolkit Support Policy</p>
                     <p>Other Resources</p>
                     <p>AJAX Typographical Conventions</p>
                     <p>Sample Visualforce Page Using the AJAX Toolkit</p>
-                </div>
+                </div> 
             </div>
             <div class="displaycontent">
                 <a href=""><span class="fa fa-angle-right">  Working with the AJAX Toolkit</span></a>
@@ -194,16 +195,46 @@
                    <p>Example Calls Using the Ajax Toolkit</p>
                 </div>
             </div>
-                   <p class="para">API End-of-Life Policy</p>
-                   <p class="para">SOAP Header Options with the AJAX Toolkit</p>
-                   <p class="para">Error Handling with the AJAX Toolkit</p>
             <div class="displaycontent">
                 <a href=""><span class="fa fa-angle-right">  Advanced Topics</span></a>
                 <div class="other_resources">
-                   <p class="para">QueryResultIterator</p>
+                   <p>QueryResultIterator</p>
+                   <p>Differences in Escaping Reserved Characters</p>
                 </div>
             </div>
-        </div>
+                   <p>API End-of-Life Policy</p>
+                   <p>SOAP Header Options with the AJAX Toolkit</p>
+                   <p>Error Handling with the AJAX Toolkit</p> -->
+            <button class="accordion"><span class="fa fa-angle-right">  When to Use the AJAX Toolkit</span></button>
+                <div class="panel">
+                    <p>AJAX Toolkit Support Policy</p>
+                    <p>Other Resources</p>
+                    <p>AJAX Typographical Conventions</p>
+                    <p>Sample Visualforce Page Using the AJAX Toolkit</p>
+                </div>
+
+            <button class="accordion"><span class="fa fa-angle-right">  Working with the AJAX Toolkit</span></button>
+                <div class="panel">
+                    <p>Connecting to the API</p>
+                    <p>Embedding API Calls in JavaScript</p>
+                    <p>Processing Results</p>
+                </div>
+
+            <button class="accordion"><span class="fa fa-angle-right">  API Calls and the AJAX Toolkit</span></button>
+                <div class="panel">
+                    <p>Synchronous and Asynchronous Calls with the AJAX Toolkit</p>
+                   <p>Object Functions</p>
+                   <p>Data Types in AJAX Toolkit</p>
+                   <p>source Context Variable</p>
+                   <p>Debugging with the AJAX Toolkit</p>
+                   <p>Example Calls Using the Ajax Toolkit</p>
+                </div>
+            <button class="accordion"><span class="fa fa-angle-right">  Advanced Topics</span></button>
+                <div class="panel">
+                    <p>QueryResultIterator</p>
+                    <p>Differences in Escaping Reserved Characters</p>
+                </div>
+            </div>
     </div>
     <div>
         <div  class="maindiv">
@@ -303,5 +334,8 @@
         </div>
     </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
